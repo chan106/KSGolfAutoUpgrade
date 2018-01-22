@@ -1,0 +1,690 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 48;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3933C7C1CD627B16DCDE9132 /* Pods_GolfAutoUpgrade.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4FBE80A2EA79328C4A1ADC47 /* Pods_GolfAutoUpgrade.framework */; };
+		A70B56EB1FBEC314000F66AB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B56EA1FBEC314000F66AB /* AppDelegate.m */; };
+		A70B56EE1FBEC314000F66AB /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B56ED1FBEC314000F66AB /* ViewController.m */; };
+		A70B56F11FBEC314000F66AB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70B56EF1FBEC314000F66AB /* Main.storyboard */; };
+		A70B56F31FBEC314000F66AB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A70B56F21FBEC314000F66AB /* Assets.xcassets */; };
+		A70B56F61FBEC314000F66AB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A70B56F41FBEC314000F66AB /* LaunchScreen.storyboard */; };
+		A70B56F91FBEC314000F66AB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B56F81FBEC314000F66AB /* main.m */; };
+		A70B570B1FBEC35B000F66AB /* JCBLECenterManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B57021FBEC35B000F66AB /* JCBLECenterManager.m */; };
+		A70B570C1FBEC35B000F66AB /* JCBLEDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B57051FBEC35B000F66AB /* JCBLEDataManager.m */; };
+		A70B570D1FBEC35B000F66AB /* JCBLEDevice.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B57071FBEC35B000F66AB /* JCBLEDevice.m */; };
+		A70B570E1FBEC35B000F66AB /* JCDataConvert.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B570A1FBEC35B000F66AB /* JCDataConvert.m */; };
+		A70B57111FBEC392000F66AB /* DeviceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = A70B570F1FBEC392000F66AB /* DeviceTableViewCell.m */; };
+		A7C574051FBECA4D00E96413 /* UpdateFirwareVC.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C574031FBECA4D00E96413 /* UpdateFirwareVC.m */; };
+		A7C574491FBECAC000E96413 /* AESCipher.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C574081FBECABF00E96413 /* AESCipher.m */; };
+		A7C5744A1FBECAC000E96413 /* JCBaseWebUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C5740A1FBECABF00E96413 /* JCBaseWebUtils.m */; };
+		A7C5744B1FBECAC000E96413 /* JCWebDataRequst.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C5740C1FBECABF00E96413 /* JCWebDataRequst.m */; };
+		A7C5744C1FBECAC000E96413 /* NSString+JCMD5Encryption.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C5740F1FBECABF00E96413 /* NSString+JCMD5Encryption.m */; };
+		A7C5744D1FBECAC000E96413 /* aescrypt.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C574161FBECABF00E96413 /* aescrypt.c */; };
+		A7C5744E1FBECAC000E96413 /* aeskey.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C574171FBECABF00E96413 /* aeskey.c */; };
+		A7C5744F1FBECAC000E96413 /* aestab.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C574191FBECABF00E96413 /* aestab.c */; };
+		A7C574501FBECAC000E96413 /* entropy.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C5741D1FBECABF00E96413 /* entropy.c */; };
+		A7C574511FBECAC000E96413 /* fileenc.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C5741F1FBECABF00E96413 /* fileenc.c */; };
+		A7C574521FBECAC000E96413 /* hmac.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C574211FBECABF00E96413 /* hmac.c */; };
+		A7C574531FBECAC000E96413 /* prng.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C574231FBECABF00E96413 /* prng.c */; };
+		A7C574541FBECAC000E96413 /* pwd2key.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C574251FBECABF00E96413 /* pwd2key.c */; };
+		A7C574551FBECAC000E96413 /* sha1.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C574271FBECABF00E96413 /* sha1.c */; };
+		A7C574561FBECAC000E96413 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A7C574291FBECABF00E96413 /* Info.plist */; };
+		A7C574571FBECAC000E96413 /* ioapi.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C5742C1FBECABF00E96413 /* ioapi.c */; };
+		A7C574581FBECAC000E96413 /* mztools.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C5742E1FBECABF00E96413 /* mztools.c */; };
+		A7C574591FBECAC000E96413 /* unzip.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C574301FBECABF00E96413 /* unzip.c */; };
+		A7C5745A1FBECAC000E96413 /* zip.c in Sources */ = {isa = PBXBuildFile; fileRef = A7C574321FBECABF00E96413 /* zip.c */; };
+		A7C5745B1FBECAC000E96413 /* SSZipArchive.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C574351FBECABF00E96413 /* SSZipArchive.m */; };
+		A7C5745C1FBECAC000E96413 /* DTError.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C5743A1FBECAC000E96413 /* DTError.m */; };
+		A7C5745D1FBECAC000E96413 /* FBShimmeringLayer.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C5743F1FBECAC000E96413 /* FBShimmeringLayer.m */; };
+		A7C5745E1FBECAC000E96413 /* FBShimmeringView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C574411FBECAC000E96413 /* FBShimmeringView.m */; };
+		A7C5745F1FBECAC000E96413 /* MMMaterialDesignSpinner.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C574431FBECAC000E96413 /* MMMaterialDesignSpinner.m */; };
+		A7C574601FBECAC000E96413 /* WSIndefiniteAnimationView.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C574451FBECAC000E96413 /* WSIndefiniteAnimationView.m */; };
+		A7C574611FBECAC000E96413 /* WSProgressBundle.bundle in Resources */ = {isa = PBXBuildFile; fileRef = A7C574461FBECAC000E96413 /* WSProgressBundle.bundle */; };
+		A7C574621FBECAC000E96413 /* WSProgressHUD.m in Sources */ = {isa = PBXBuildFile; fileRef = A7C574481FBECAC000E96413 /* WSProgressHUD.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4FBE80A2EA79328C4A1ADC47 /* Pods_GolfAutoUpgrade.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GolfAutoUpgrade.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70B56E61FBEC314000F66AB /* GolfAutoUpgrade.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GolfAutoUpgrade.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A70B56E91FBEC314000F66AB /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		A70B56EA1FBEC314000F66AB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		A70B56EC1FBEC314000F66AB /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		A70B56ED1FBEC314000F66AB /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		A70B56F01FBEC314000F66AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		A70B56F21FBEC314000F66AB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A70B56F51FBEC314000F66AB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		A70B56F71FBEC314000F66AB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A70B56F81FBEC314000F66AB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		A70B57001FBEC35B000F66AB /* JCBLE.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBLE.h; sourceTree = "<group>"; };
+		A70B57011FBEC35B000F66AB /* JCBLECenterManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBLECenterManager.h; sourceTree = "<group>"; };
+		A70B57021FBEC35B000F66AB /* JCBLECenterManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBLECenterManager.m; sourceTree = "<group>"; };
+		A70B57031FBEC35B000F66AB /* JCBLEConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBLEConfig.h; sourceTree = "<group>"; };
+		A70B57041FBEC35B000F66AB /* JCBLEDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBLEDataManager.h; sourceTree = "<group>"; };
+		A70B57051FBEC35B000F66AB /* JCBLEDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBLEDataManager.m; sourceTree = "<group>"; };
+		A70B57061FBEC35B000F66AB /* JCBLEDevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBLEDevice.h; sourceTree = "<group>"; };
+		A70B57071FBEC35B000F66AB /* JCBLEDevice.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBLEDevice.m; sourceTree = "<group>"; };
+		A70B57081FBEC35B000F66AB /* JCBLEEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBLEEnum.h; sourceTree = "<group>"; };
+		A70B57091FBEC35B000F66AB /* JCDataConvert.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCDataConvert.h; sourceTree = "<group>"; };
+		A70B570A1FBEC35B000F66AB /* JCDataConvert.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCDataConvert.m; sourceTree = "<group>"; };
+		A70B570F1FBEC392000F66AB /* DeviceTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeviceTableViewCell.m; sourceTree = "<group>"; };
+		A70B57101FBEC392000F66AB /* DeviceTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeviceTableViewCell.h; sourceTree = "<group>"; };
+		A7C574031FBECA4D00E96413 /* UpdateFirwareVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UpdateFirwareVC.m; sourceTree = "<group>"; };
+		A7C574041FBECA4D00E96413 /* UpdateFirwareVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UpdateFirwareVC.h; sourceTree = "<group>"; };
+		A7C574071FBECABF00E96413 /* AESCipher.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AESCipher.h; sourceTree = "<group>"; };
+		A7C574081FBECABF00E96413 /* AESCipher.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AESCipher.m; sourceTree = "<group>"; };
+		A7C574091FBECABF00E96413 /* JCBaseWebUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCBaseWebUtils.h; sourceTree = "<group>"; };
+		A7C5740A1FBECABF00E96413 /* JCBaseWebUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCBaseWebUtils.m; sourceTree = "<group>"; };
+		A7C5740B1FBECABF00E96413 /* JCWebDataRequst.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWebDataRequst.h; sourceTree = "<group>"; };
+		A7C5740C1FBECABF00E96413 /* JCWebDataRequst.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JCWebDataRequst.m; sourceTree = "<group>"; };
+		A7C5740D1FBECABF00E96413 /* JCWebRequestConfig.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JCWebRequestConfig.h; sourceTree = "<group>"; };
+		A7C5740E1FBECABF00E96413 /* NSString+JCMD5Encryption.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+JCMD5Encryption.h"; sourceTree = "<group>"; };
+		A7C5740F1FBECABF00E96413 /* NSString+JCMD5Encryption.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+JCMD5Encryption.m"; sourceTree = "<group>"; };
+		A7C574101FBECABF00E96413 /* WebRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequest.h; sourceTree = "<group>"; };
+		A7C574111FBECABF00E96413 /* WebRequestStateEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WebRequestStateEnum.h; sourceTree = "<group>"; };
+		A7C574141FBECABF00E96413 /* aes.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes.h; sourceTree = "<group>"; };
+		A7C574151FBECABF00E96413 /* aes_via_ace.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aes_via_ace.h; sourceTree = "<group>"; };
+		A7C574161FBECABF00E96413 /* aescrypt.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aescrypt.c; sourceTree = "<group>"; };
+		A7C574171FBECABF00E96413 /* aeskey.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aeskey.c; sourceTree = "<group>"; };
+		A7C574181FBECABF00E96413 /* aesopt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aesopt.h; sourceTree = "<group>"; };
+		A7C574191FBECABF00E96413 /* aestab.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = aestab.c; sourceTree = "<group>"; };
+		A7C5741A1FBECABF00E96413 /* aestab.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = aestab.h; sourceTree = "<group>"; };
+		A7C5741B1FBECABF00E96413 /* brg_endian.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_endian.h; sourceTree = "<group>"; };
+		A7C5741C1FBECABF00E96413 /* brg_types.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = brg_types.h; sourceTree = "<group>"; };
+		A7C5741D1FBECABF00E96413 /* entropy.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = entropy.c; sourceTree = "<group>"; };
+		A7C5741E1FBECABF00E96413 /* entropy.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = entropy.h; sourceTree = "<group>"; };
+		A7C5741F1FBECABF00E96413 /* fileenc.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = fileenc.c; sourceTree = "<group>"; };
+		A7C574201FBECABF00E96413 /* fileenc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = fileenc.h; sourceTree = "<group>"; };
+		A7C574211FBECABF00E96413 /* hmac.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = hmac.c; sourceTree = "<group>"; };
+		A7C574221FBECABF00E96413 /* hmac.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = hmac.h; sourceTree = "<group>"; };
+		A7C574231FBECABF00E96413 /* prng.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = prng.c; sourceTree = "<group>"; };
+		A7C574241FBECABF00E96413 /* prng.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = prng.h; sourceTree = "<group>"; };
+		A7C574251FBECABF00E96413 /* pwd2key.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pwd2key.c; sourceTree = "<group>"; };
+		A7C574261FBECABF00E96413 /* pwd2key.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pwd2key.h; sourceTree = "<group>"; };
+		A7C574271FBECABF00E96413 /* sha1.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = sha1.c; sourceTree = "<group>"; };
+		A7C574281FBECABF00E96413 /* sha1.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = sha1.h; sourceTree = "<group>"; };
+		A7C574291FBECABF00E96413 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A7C5742B1FBECABF00E96413 /* crypt.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = crypt.h; sourceTree = "<group>"; };
+		A7C5742C1FBECABF00E96413 /* ioapi.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = ioapi.c; sourceTree = "<group>"; };
+		A7C5742D1FBECABF00E96413 /* ioapi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ioapi.h; sourceTree = "<group>"; };
+		A7C5742E1FBECABF00E96413 /* mztools.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = mztools.c; sourceTree = "<group>"; };
+		A7C5742F1FBECABF00E96413 /* mztools.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = mztools.h; sourceTree = "<group>"; };
+		A7C574301FBECABF00E96413 /* unzip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = unzip.c; sourceTree = "<group>"; };
+		A7C574311FBECABF00E96413 /* unzip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = unzip.h; sourceTree = "<group>"; };
+		A7C574321FBECABF00E96413 /* zip.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = zip.c; sourceTree = "<group>"; };
+		A7C574331FBECABF00E96413 /* zip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zip.h; sourceTree = "<group>"; };
+		A7C574341FBECABF00E96413 /* SSZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipArchive.h; sourceTree = "<group>"; };
+		A7C574351FBECABF00E96413 /* SSZipArchive.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SSZipArchive.m; sourceTree = "<group>"; };
+		A7C574361FBECABF00E96413 /* SSZipCommon.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SSZipCommon.h; sourceTree = "<group>"; };
+		A7C574371FBECABF00E96413 /* ZipArchive.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZipArchive.h; sourceTree = "<group>"; };
+		A7C574391FBECAC000E96413 /* DTError.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DTError.h; sourceTree = "<group>"; };
+		A7C5743A1FBECAC000E96413 /* DTError.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DTError.m; sourceTree = "<group>"; };
+		A7C5743C1FBECAC000E96413 /* FBShimmering-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "FBShimmering-Prefix.pch"; sourceTree = "<group>"; };
+		A7C5743D1FBECAC000E96413 /* FBShimmering.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmering.h; sourceTree = "<group>"; };
+		A7C5743E1FBECAC000E96413 /* FBShimmeringLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringLayer.h; sourceTree = "<group>"; };
+		A7C5743F1FBECAC000E96413 /* FBShimmeringLayer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringLayer.m; sourceTree = "<group>"; };
+		A7C574401FBECAC000E96413 /* FBShimmeringView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FBShimmeringView.h; sourceTree = "<group>"; };
+		A7C574411FBECAC000E96413 /* FBShimmeringView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FBShimmeringView.m; sourceTree = "<group>"; };
+		A7C574421FBECAC000E96413 /* MMMaterialDesignSpinner.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MMMaterialDesignSpinner.h; sourceTree = "<group>"; };
+		A7C574431FBECAC000E96413 /* MMMaterialDesignSpinner.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MMMaterialDesignSpinner.m; sourceTree = "<group>"; };
+		A7C574441FBECAC000E96413 /* WSIndefiniteAnimationView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSIndefiniteAnimationView.h; sourceTree = "<group>"; };
+		A7C574451FBECAC000E96413 /* WSIndefiniteAnimationView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSIndefiniteAnimationView.m; sourceTree = "<group>"; };
+		A7C574461FBECAC000E96413 /* WSProgressBundle.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = WSProgressBundle.bundle; sourceTree = "<group>"; };
+		A7C574471FBECAC000E96413 /* WSProgressHUD.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WSProgressHUD.h; sourceTree = "<group>"; };
+		A7C574481FBECAC000E96413 /* WSProgressHUD.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WSProgressHUD.m; sourceTree = "<group>"; };
+		BBFB6E680F117C461324A0EE /* Pods-GolfAutoUpgrade.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolfAutoUpgrade.release.xcconfig"; path = "Pods/Target Support Files/Pods-GolfAutoUpgrade/Pods-GolfAutoUpgrade.release.xcconfig"; sourceTree = "<group>"; };
+		E3D49B42AE4B0BC84EBB70FF /* Pods-GolfAutoUpgrade.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GolfAutoUpgrade.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GolfAutoUpgrade/Pods-GolfAutoUpgrade.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A70B56E31FBEC314000F66AB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3933C7C1CD627B16DCDE9132 /* Pods_GolfAutoUpgrade.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		83130C68F3D2BDBE88730490 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4FBE80A2EA79328C4A1ADC47 /* Pods_GolfAutoUpgrade.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A70B56DD1FBEC314000F66AB = {
+			isa = PBXGroup;
+			children = (
+				A70B56E81FBEC314000F66AB /* GolfAutoUpgrade */,
+				A70B56E71FBEC314000F66AB /* Products */,
+				A957EED4421DD32B88ED9CAC /* Pods */,
+				83130C68F3D2BDBE88730490 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		A70B56E71FBEC314000F66AB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A70B56E61FBEC314000F66AB /* GolfAutoUpgrade.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A70B56E81FBEC314000F66AB /* GolfAutoUpgrade */ = {
+			isa = PBXGroup;
+			children = (
+				A7C574381FBECAC000E96413 /* Errors */,
+				A7C574121FBECABF00E96413 /* SSZipArchive */,
+				A7C574061FBECABF00E96413 /* WebUtils */,
+				A7C5743B1FBECAC000E96413 /* WSProgressHUD */,
+				A70B56FF1FBEC35B000F66AB /* Bluetooth */,
+				A70B56E91FBEC314000F66AB /* AppDelegate.h */,
+				A70B56EA1FBEC314000F66AB /* AppDelegate.m */,
+				A70B56EC1FBEC314000F66AB /* ViewController.h */,
+				A70B56ED1FBEC314000F66AB /* ViewController.m */,
+				A70B57101FBEC392000F66AB /* DeviceTableViewCell.h */,
+				A70B570F1FBEC392000F66AB /* DeviceTableViewCell.m */,
+				A7C574041FBECA4D00E96413 /* UpdateFirwareVC.h */,
+				A7C574031FBECA4D00E96413 /* UpdateFirwareVC.m */,
+				A70B56EF1FBEC314000F66AB /* Main.storyboard */,
+				A70B56F21FBEC314000F66AB /* Assets.xcassets */,
+				A70B56F41FBEC314000F66AB /* LaunchScreen.storyboard */,
+				A70B56F71FBEC314000F66AB /* Info.plist */,
+				A70B56F81FBEC314000F66AB /* main.m */,
+			);
+			path = GolfAutoUpgrade;
+			sourceTree = "<group>";
+		};
+		A70B56FF1FBEC35B000F66AB /* Bluetooth */ = {
+			isa = PBXGroup;
+			children = (
+				A70B57001FBEC35B000F66AB /* JCBLE.h */,
+				A70B57011FBEC35B000F66AB /* JCBLECenterManager.h */,
+				A70B57021FBEC35B000F66AB /* JCBLECenterManager.m */,
+				A70B57031FBEC35B000F66AB /* JCBLEConfig.h */,
+				A70B57041FBEC35B000F66AB /* JCBLEDataManager.h */,
+				A70B57051FBEC35B000F66AB /* JCBLEDataManager.m */,
+				A70B57061FBEC35B000F66AB /* JCBLEDevice.h */,
+				A70B57071FBEC35B000F66AB /* JCBLEDevice.m */,
+				A70B57081FBEC35B000F66AB /* JCBLEEnum.h */,
+				A70B57091FBEC35B000F66AB /* JCDataConvert.h */,
+				A70B570A1FBEC35B000F66AB /* JCDataConvert.m */,
+			);
+			path = Bluetooth;
+			sourceTree = "<group>";
+		};
+		A7C574061FBECABF00E96413 /* WebUtils */ = {
+			isa = PBXGroup;
+			children = (
+				A7C574071FBECABF00E96413 /* AESCipher.h */,
+				A7C574081FBECABF00E96413 /* AESCipher.m */,
+				A7C574091FBECABF00E96413 /* JCBaseWebUtils.h */,
+				A7C5740A1FBECABF00E96413 /* JCBaseWebUtils.m */,
+				A7C5740B1FBECABF00E96413 /* JCWebDataRequst.h */,
+				A7C5740C1FBECABF00E96413 /* JCWebDataRequst.m */,
+				A7C5740D1FBECABF00E96413 /* JCWebRequestConfig.h */,
+				A7C5740E1FBECABF00E96413 /* NSString+JCMD5Encryption.h */,
+				A7C5740F1FBECABF00E96413 /* NSString+JCMD5Encryption.m */,
+				A7C574101FBECABF00E96413 /* WebRequest.h */,
+				A7C574111FBECABF00E96413 /* WebRequestStateEnum.h */,
+			);
+			path = WebUtils;
+			sourceTree = "<group>";
+		};
+		A7C574121FBECABF00E96413 /* SSZipArchive */ = {
+			isa = PBXGroup;
+			children = (
+				A7C574131FBECABF00E96413 /* aes */,
+				A7C574291FBECABF00E96413 /* Info.plist */,
+				A7C5742A1FBECABF00E96413 /* minizip */,
+				A7C574341FBECABF00E96413 /* SSZipArchive.h */,
+				A7C574351FBECABF00E96413 /* SSZipArchive.m */,
+				A7C574361FBECABF00E96413 /* SSZipCommon.h */,
+				A7C574371FBECABF00E96413 /* ZipArchive.h */,
+			);
+			path = SSZipArchive;
+			sourceTree = "<group>";
+		};
+		A7C574131FBECABF00E96413 /* aes */ = {
+			isa = PBXGroup;
+			children = (
+				A7C574141FBECABF00E96413 /* aes.h */,
+				A7C574151FBECABF00E96413 /* aes_via_ace.h */,
+				A7C574161FBECABF00E96413 /* aescrypt.c */,
+				A7C574171FBECABF00E96413 /* aeskey.c */,
+				A7C574181FBECABF00E96413 /* aesopt.h */,
+				A7C574191FBECABF00E96413 /* aestab.c */,
+				A7C5741A1FBECABF00E96413 /* aestab.h */,
+				A7C5741B1FBECABF00E96413 /* brg_endian.h */,
+				A7C5741C1FBECABF00E96413 /* brg_types.h */,
+				A7C5741D1FBECABF00E96413 /* entropy.c */,
+				A7C5741E1FBECABF00E96413 /* entropy.h */,
+				A7C5741F1FBECABF00E96413 /* fileenc.c */,
+				A7C574201FBECABF00E96413 /* fileenc.h */,
+				A7C574211FBECABF00E96413 /* hmac.c */,
+				A7C574221FBECABF00E96413 /* hmac.h */,
+				A7C574231FBECABF00E96413 /* prng.c */,
+				A7C574241FBECABF00E96413 /* prng.h */,
+				A7C574251FBECABF00E96413 /* pwd2key.c */,
+				A7C574261FBECABF00E96413 /* pwd2key.h */,
+				A7C574271FBECABF00E96413 /* sha1.c */,
+				A7C574281FBECABF00E96413 /* sha1.h */,
+			);
+			path = aes;
+			sourceTree = "<group>";
+		};
+		A7C5742A1FBECABF00E96413 /* minizip */ = {
+			isa = PBXGroup;
+			children = (
+				A7C5742B1FBECABF00E96413 /* crypt.h */,
+				A7C5742C1FBECABF00E96413 /* ioapi.c */,
+				A7C5742D1FBECABF00E96413 /* ioapi.h */,
+				A7C5742E1FBECABF00E96413 /* mztools.c */,
+				A7C5742F1FBECABF00E96413 /* mztools.h */,
+				A7C574301FBECABF00E96413 /* unzip.c */,
+				A7C574311FBECABF00E96413 /* unzip.h */,
+				A7C574321FBECABF00E96413 /* zip.c */,
+				A7C574331FBECABF00E96413 /* zip.h */,
+			);
+			path = minizip;
+			sourceTree = "<group>";
+		};
+		A7C574381FBECAC000E96413 /* Errors */ = {
+			isa = PBXGroup;
+			children = (
+				A7C574391FBECAC000E96413 /* DTError.h */,
+				A7C5743A1FBECAC000E96413 /* DTError.m */,
+			);
+			path = Errors;
+			sourceTree = "<group>";
+		};
+		A7C5743B1FBECAC000E96413 /* WSProgressHUD */ = {
+			isa = PBXGroup;
+			children = (
+				A7C5743C1FBECAC000E96413 /* FBShimmering-Prefix.pch */,
+				A7C5743D1FBECAC000E96413 /* FBShimmering.h */,
+				A7C5743E1FBECAC000E96413 /* FBShimmeringLayer.h */,
+				A7C5743F1FBECAC000E96413 /* FBShimmeringLayer.m */,
+				A7C574401FBECAC000E96413 /* FBShimmeringView.h */,
+				A7C574411FBECAC000E96413 /* FBShimmeringView.m */,
+				A7C574421FBECAC000E96413 /* MMMaterialDesignSpinner.h */,
+				A7C574431FBECAC000E96413 /* MMMaterialDesignSpinner.m */,
+				A7C574441FBECAC000E96413 /* WSIndefiniteAnimationView.h */,
+				A7C574451FBECAC000E96413 /* WSIndefiniteAnimationView.m */,
+				A7C574461FBECAC000E96413 /* WSProgressBundle.bundle */,
+				A7C574471FBECAC000E96413 /* WSProgressHUD.h */,
+				A7C574481FBECAC000E96413 /* WSProgressHUD.m */,
+			);
+			path = WSProgressHUD;
+			sourceTree = "<group>";
+		};
+		A957EED4421DD32B88ED9CAC /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				E3D49B42AE4B0BC84EBB70FF /* Pods-GolfAutoUpgrade.debug.xcconfig */,
+				BBFB6E680F117C461324A0EE /* Pods-GolfAutoUpgrade.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A70B56E51FBEC314000F66AB /* GolfAutoUpgrade */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A70B56FC1FBEC314000F66AB /* Build configuration list for PBXNativeTarget "GolfAutoUpgrade" */;
+			buildPhases = (
+				C85E4214C51D197902D33E93 /* [CP] Check Pods Manifest.lock */,
+				A70B56E21FBEC314000F66AB /* Sources */,
+				A70B56E31FBEC314000F66AB /* Frameworks */,
+				A70B56E41FBEC314000F66AB /* Resources */,
+				CF8B89C6742D61B7DBEE7F1D /* [CP] Embed Pods Frameworks */,
+				143FD15E3CCB6EAC2A68859C /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GolfAutoUpgrade;
+			productName = GolfAutoUpgrade;
+			productReference = A70B56E61FBEC314000F66AB /* GolfAutoUpgrade.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A70B56DE1FBEC314000F66AB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = KOOSPUR;
+				TargetAttributes = {
+					A70B56E51FBEC314000F66AB = {
+						CreatedOnToolsVersion = 9.1;
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = A70B56E11FBEC314000F66AB /* Build configuration list for PBXProject "GolfAutoUpgrade" */;
+			compatibilityVersion = "Xcode 8.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A70B56DD1FBEC314000F66AB;
+			productRefGroup = A70B56E71FBEC314000F66AB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A70B56E51FBEC314000F66AB /* GolfAutoUpgrade */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A70B56E41FBEC314000F66AB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A7C574561FBECAC000E96413 /* Info.plist in Resources */,
+				A70B56F61FBEC314000F66AB /* LaunchScreen.storyboard in Resources */,
+				A7C574611FBECAC000E96413 /* WSProgressBundle.bundle in Resources */,
+				A70B56F31FBEC314000F66AB /* Assets.xcassets in Resources */,
+				A70B56F11FBEC314000F66AB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		143FD15E3CCB6EAC2A68859C /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GolfAutoUpgrade/Pods-GolfAutoUpgrade-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C85E4214C51D197902D33E93 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GolfAutoUpgrade-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CF8B89C6742D61B7DBEE7F1D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GolfAutoUpgrade/Pods-GolfAutoUpgrade-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/AFNetworking/AFNetworking.framework",
+				"${BUILT_PRODUCTS_DIR}/Zip/Zip.framework",
+				"${BUILT_PRODUCTS_DIR}/iOSDFULibrary/iOSDFULibrary.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AFNetworking.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Zip.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/iOSDFULibrary.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GolfAutoUpgrade/Pods-GolfAutoUpgrade-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A70B56E21FBEC314000F66AB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A70B570D1FBEC35B000F66AB /* JCBLEDevice.m in Sources */,
+				A7C5744B1FBECAC000E96413 /* JCWebDataRequst.m in Sources */,
+				A7C574581FBECAC000E96413 /* mztools.c in Sources */,
+				A7C574501FBECAC000E96413 /* entropy.c in Sources */,
+				A70B570C1FBEC35B000F66AB /* JCBLEDataManager.m in Sources */,
+				A7C5744A1FBECAC000E96413 /* JCBaseWebUtils.m in Sources */,
+				A7C5745D1FBECAC000E96413 /* FBShimmeringLayer.m in Sources */,
+				A7C574051FBECA4D00E96413 /* UpdateFirwareVC.m in Sources */,
+				A7C574551FBECAC000E96413 /* sha1.c in Sources */,
+				A7C5744C1FBECAC000E96413 /* NSString+JCMD5Encryption.m in Sources */,
+				A70B570E1FBEC35B000F66AB /* JCDataConvert.m in Sources */,
+				A7C5745C1FBECAC000E96413 /* DTError.m in Sources */,
+				A7C574491FBECAC000E96413 /* AESCipher.m in Sources */,
+				A7C5745E1FBECAC000E96413 /* FBShimmeringView.m in Sources */,
+				A7C5745B1FBECAC000E96413 /* SSZipArchive.m in Sources */,
+				A70B57111FBEC392000F66AB /* DeviceTableViewCell.m in Sources */,
+				A7C574571FBECAC000E96413 /* ioapi.c in Sources */,
+				A7C574531FBECAC000E96413 /* prng.c in Sources */,
+				A7C5744F1FBECAC000E96413 /* aestab.c in Sources */,
+				A7C5744E1FBECAC000E96413 /* aeskey.c in Sources */,
+				A7C574591FBECAC000E96413 /* unzip.c in Sources */,
+				A7C574521FBECAC000E96413 /* hmac.c in Sources */,
+				A7C574511FBECAC000E96413 /* fileenc.c in Sources */,
+				A70B56EE1FBEC314000F66AB /* ViewController.m in Sources */,
+				A70B56F91FBEC314000F66AB /* main.m in Sources */,
+				A7C574621FBECAC000E96413 /* WSProgressHUD.m in Sources */,
+				A70B56EB1FBEC314000F66AB /* AppDelegate.m in Sources */,
+				A7C574601FBECAC000E96413 /* WSIndefiniteAnimationView.m in Sources */,
+				A7C5745F1FBECAC000E96413 /* MMMaterialDesignSpinner.m in Sources */,
+				A7C5744D1FBECAC000E96413 /* aescrypt.c in Sources */,
+				A7C5745A1FBECAC000E96413 /* zip.c in Sources */,
+				A7C574541FBECAC000E96413 /* pwd2key.c in Sources */,
+				A70B570B1FBEC35B000F66AB /* JCBLECenterManager.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A70B56EF1FBEC314000F66AB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A70B56F01FBEC314000F66AB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		A70B56F41FBEC314000F66AB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A70B56F51FBEC314000F66AB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A70B56FA1FBEC314000F66AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		A70B56FB1FBEC314000F66AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		A70B56FD1FBEC314000F66AB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = E3D49B42AE4B0BC84EBB70FF /* Pods-GolfAutoUpgrade.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMRWL79YZQ;
+				INFOPLIST_FILE = GolfAutoUpgrade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KOOSPUR.GolfAutoUpgrade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		A70B56FE1FBEC314000F66AB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BBFB6E680F117C461324A0EE /* Pods-GolfAutoUpgrade.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = LMRWL79YZQ;
+				INFOPLIST_FILE = GolfAutoUpgrade/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = KOOSPUR.GolfAutoUpgrade;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A70B56E11FBEC314000F66AB /* Build configuration list for PBXProject "GolfAutoUpgrade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70B56FA1FBEC314000F66AB /* Debug */,
+				A70B56FB1FBEC314000F66AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A70B56FC1FBEC314000F66AB /* Build configuration list for PBXNativeTarget "GolfAutoUpgrade" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A70B56FD1FBEC314000F66AB /* Debug */,
+				A70B56FE1FBEC314000F66AB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A70B56DE1FBEC314000F66AB /* Project object */;
+}

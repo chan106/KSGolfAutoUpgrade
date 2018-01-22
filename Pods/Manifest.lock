@@ -1,0 +1,32 @@
+PODS:
+  - AFNetworking (3.1.0):
+    - AFNetworking/NSURLSession (= 3.1.0)
+    - AFNetworking/Reachability (= 3.1.0)
+    - AFNetworking/Security (= 3.1.0)
+    - AFNetworking/Serialization (= 3.1.0)
+    - AFNetworking/UIKit (= 3.1.0)
+  - AFNetworking/NSURLSession (3.1.0):
+    - AFNetworking/Reachability
+    - AFNetworking/Security
+    - AFNetworking/Serialization
+  - AFNetworking/Reachability (3.1.0)
+  - AFNetworking/Security (3.1.0)
+  - AFNetworking/Serialization (3.1.0)
+  - AFNetworking/UIKit (3.1.0):
+    - AFNetworking/NSURLSession
+  - iOSDFULibrary (4.0.2):
+    - Zip (~> 1.0)
+  - Zip (1.0.0)
+
+DEPENDENCIES:
+  - AFNetworking
+  - iOSDFULibrary
+
+SPEC CHECKSUMS:
+  AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
+  iOSDFULibrary: 739d3b5f2c99120b4e9b93ca165d9e451e3c8dec
+  Zip: 115a122433829a1bbf33f5575fa84047438dcc12
+
+PODFILE CHECKSUM: 86a1ee22bc61fd29311491f4656668da1b348913
+
+COCOAPODS: 1.4.0.beta.2
